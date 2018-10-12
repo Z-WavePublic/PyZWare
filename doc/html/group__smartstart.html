@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>ZWare Sample Client 1.1: Working with Binary Sensor</title>
+<title>ZWare Sample Client 1.1: Managing smart start devices in the network</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -75,12 +75,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Working with Binary Sensor</div>  </div>
+<div class="title">Managing smart start devices in the network</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h1><a class="anchor" id="polling_sensor"></a>
-Polling Binary Sensor State</h1>
-<p>On polling for node list the client will also track device and their state values. This is applicable to Binary Sensors in this version. Once a binary sensor is found in the network the client will retrieve the sensor's last known state from the server. Every time the binary sensor's state changes it will send out a report to the server which will be stored as the last known state in the server. Additionally along with the value the client will also display the sensor type. </p>
+<h1><a class="anchor" id="introduction"></a>
+Introduction</h1>
+<p>Once the user is logged in to the network they can manage smart start devices in the network. This is done by selecting the "Smart Start" button. This opens a new window which allows the user to<br />
+1.Register a smart start device to a network and <br />
+2.Get Smart start device details<br />
+ </p>
+<h1><a class="anchor" id="register"></a>
+Registering a smartstart device to the network</h1>
+<p>This can be done by clicking on the "Register Smart start Device" button. The user can enter the required values and click on the "Register Device" button. If everything is correct the device will be registered to the network. The next time the device is turned on it will be automatically included into the network if it has been registered that way. Only the DSK is mandatory for registerting a device to the network. The user can click on the "Help" button to find out the details regarding the different options available when registering a device to the network. </p>
+<h1><a class="anchor" id="get_smart_start_details"></a>
+Get Smart start device details.</h1>
+<p>This can be done by clicking on the "Get Smart start Devices details" button. It will show a list of the smart start devices registered in the network identified by the their DSK. The user has the option to <br />
+1.Edit the device which opens up the Register window again populated with the devices' existing values which the user can update and then click the "Update Device" button to complete the process.<br />
+2.Delete the selected device from the smart start registry in the network and <br />
+3.Delete all devices from the smart start registry in the network<br />
+ </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

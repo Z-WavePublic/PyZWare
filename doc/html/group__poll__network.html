@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>ZWare Sample Client 1.0: Polling the network</title>
+<title>ZWare Sample Client 1.1: Polling the network</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ZWare Sample Client 1.0
+   <div id="projectname">ZWare Sample Client 1.1
    </div>
   </td>
  </tr>
@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -80,9 +81,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1><a class="anchor" id="polling"></a>
 Network Polling</h1>
 <p>The client polls the network both automatically in the background as well as on user prompt with the "Node Details" button. On polling succesfully the client displays a list of nodes along with all available endpoints connected to them. It also displays a list of all the Command Classes supported by each endpoint. This is achieved using:<br />
-1. The Client queries for available nodes using the <b>zwnet_get_node_list</b> web api.<br />
-2. On succesfully retrieving the node list the client queries for available endpoints for each node using the <b>zwnet_get_ep_list</b> web api.<br />
-3. Subsequently for each endpoint it will query for the supporting command classes using the <b>zwnet_get_if_list</b> web api. Once all data has been retrieved it will either be a:)Be displayed to the user if they had clicked on the "Node Details" button or b:)Be used for further background polling of devices. </p>
+1. The Client queries for available nodes.<br />
+2. On succesfully retrieving the node list the client queries for available endpoints for each node.<br />
+3. Subsequently for each endpoint it will query for the supporting command classes. Once all data has been retrieved it will either be a:)Be displayed to the user if they had clicked on the "Node Details" button or b:)Be used for further background polling of devices. </p>
 <h1><a class="anchor" id="tracking"></a>
 Tracking Devices</h1>
 <p>The client will constantly be polling the network for tracking devices and their state values. In the present version this support is provided for Binary Switches, Binary Sensors and Multilevel Sensors. For example whenever a binary switch is added or removed from a network the client will display this information to the user. This is achieved using the polling web-apis mentioned above along with identifying the binary switch using it's interface id. </p>

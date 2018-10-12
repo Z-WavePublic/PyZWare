@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>ZWare Sample Client 1.0: Include and Exclude a device</title>
+<title>ZWare Sample Client 1.1: Include and Exclude a device</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ZWare Sample Client 1.0
+   <div id="projectname">ZWare Sample Client 1.1
    </div>
   </td>
  </tr>
@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -79,13 +80,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <h1><a class="anchor" id="include"></a>
 Including a device to the network</h1>
-<p>Once the user is logged in succesfully they can include a Z-Wave supported device to the network. This is triggered using the "Include Device" button. On clicking this button the user is prompted to initiate the device and start the inclusion process. The inclusion is done using the <b>zwnet_add</b> web api. Once this is done succesfully the client will display that the device is connected to the network followed by polling the network to get the latest node list. </p>
+<p>Once the user is logged in succesfully they can include a Z-Wave supported device to the network. This is triggered using the "Include Device" button. On clicking this button the user is prompted to initiate the device and start the inclusion process. Once this is done succesfully the client will display that the device is connected to the network followed by polling the network to get the latest node list. </p>
+<h1><a class="anchor" id="secure_include"></a>
+Including a secure device to the network</h1>
+<p>Once the user is logged in succesfully they can include a Z-Wave supported S2 device to the network. This is triggered using the "Include S2 Device" button. On clicking this button the user is prompted to initiate the device and start the secure inclusion process. During this inclusion process the user will be first prompted to select the grant keys appropriate to the device. Once this is done the user may be asked to enter the first 5 digits of the device's DSK. If done correctly the device will be securely included in the network. </p>
 <h1><a class="anchor" id="exclude"></a>
 Excluding a device from the network</h1>
-<p>Once the user is logged in succesfully they can exclude a Z-Wave supported device from the network. This is achieved using the "Exclude Device" button. On clicking the user is prompted to initiate the device and start the exclusion process. The exclusion is also done using the <b>zwnet_add</b> web api however with a different input parameter than the inclusion process. Once this is done succesfully the client will display that the device is removed from the network followed by polling the network to get the latest node list. </p>
+<p>Once the user is logged in succesfully they can exclude a Z-Wave supported device from the network. This is achieved using the "Exclude Device" button. On clicking the user is prompted to initiate the device and start the exclusion process. Once this is done succesfully the client will display that the device is removed from the network followed by polling the network to get the latest node list. </p>
 <h1><a class="anchor" id="confirmation"></a>
 Inclusion and Exclusion Confirmation</h1>
-<p>Once the inclusion or exclusion process has been initiated the client continuously tracks the last completed operation in the server using the <b>zwnet_get_operation</b> web api. Once the server confirms that the last completed operation was either the inclusion or exclusion the client will confirm that the device has been included or excluded in the network. </p>
+<p>Once the inclusion or exclusion process has been initiated the client continuously tracks the last completed operation in the server. Once the server confirms that the last completed operation was either the inclusion or exclusion the client will confirm that the device has been included or excluded in the network. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

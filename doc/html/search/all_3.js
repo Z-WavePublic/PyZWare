@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['polling_20the_20network',['Polling the network',['../group__poll__network.html',1,'']]]
+  ['managing_20smart_20start_20devices_20in_20the_20network',['Managing smart start devices in the network',['../group__smartstart.html',1,'']]]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>ZWare Sample Client 1.0: Connect to a network</title>
+<title>ZWare Sample Client 1.1: Connect to a network</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ZWare Sample Client 1.0
+   <div id="projectname">ZWare Sample Client 1.1
    </div>
   </td>
  </tr>
@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -79,16 +80,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <h1><a class="anchor" id="modes"></a>
 Connection Modes</h1>
-<p>The user can either connect to the board(<b>Board Connection</b>) or to the portal(<b>Portal Connection</b>.) Selecting either opens a new window based on the input type.<br />
+<p>The user can either connect to the board(<b>Board Connection</b>) or to the portal(<b>Portal Connection</b>.) Selecting either opens a login frame based on the input type.<br />
  </p>
 <h2><a class="anchor" id="board"></a>
 Board Connection</h2>
 <p>In this selection the user is communicating with ZWare in local mode i.e.,talking to ZWare in the board directly. In order to login to the server the user has to know it's IP address. The username and password is constant and hard-coded in the application. Once the user has entered a valid IP address the application will connect to the server. </p>
 <h2><a class="anchor" id="portal"></a>
 Portal Connection</h2>
-<p>In this selection the user is communicating with the ZWare in portal mode i.e.,talking to the ZWare via a portal. In order to login the server the user should have registered a username and password with the server and configured it to connect to the zipgateway. The default URL for connecting in portal mode is <b>z-wave.sigmadesigns.com</b>. Once the user has entered a valid username and password the application will connect to the server.<br />
+<p>In this selection the user is communicating with the ZWare in portal mode i.e.,talking to the ZWare via a portal. In order to login the server the user should have registered a username and password with the server and configured it to connect to the zipgateway. The default URL for connecting in portal mode is <b>z-ware.silabs.com</b>. Once the user has entered a valid username and password the application will connect to the server.<br />
 <br />
-On successfully connecting to the server (using the <b>register/login.php</b> page) in either mode the Application will display the current version (retrieved using the <b>zw_version</b> web api) of ZWare followed a list of nodes currently connected to the server. </p>
+On successfully connecting to the server in either mode the Application will display the current version of ZWare followed a list of nodes currently connected to the server. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

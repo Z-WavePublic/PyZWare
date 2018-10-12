@@ -1,21 +1,24 @@
 var indexSectionsWithContent =
 {
-  0: "cdipwz",
-  1: "cdipw",
-  2: "z"
+  0: "cdimpwz",
+  1: "z",
+  2: "cdimpw",
+  3: "z"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "groups",
-  2: "pages"
+  1: "classes",
+  2: "groups",
+  3: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Modules",
-  2: "Pages"
+  1: "Classes",
+  2: "Modules",
+  3: "Pages"
 };
 
