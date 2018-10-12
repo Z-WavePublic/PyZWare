@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>ZWare Sample Client 1.0: Working with Binary Switch</title>
+<title>ZWare Sample Client 1.1: Working with Binary Switch</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ZWare Sample Client 1.0
+   <div id="projectname">ZWare Sample Client 1.1
    </div>
   </td>
  </tr>
@@ -39,6 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -79,11 +80,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <h1><a class="anchor" id="polling_switch"></a>
 Polling Binary Switch state</h1>
-<p>On polling for node list the client will also track device and their state values. This is applicable to Binary Switches in this version. Once a binary switch is found in the network the client will retrieve the switch's last known state from the server. This is achieved using the <b>zwif_switch</b> web api and the necessary input parameter for getting a BINARY_SWITCH_REPORT from the server. Every time the binary switch's state changes it will send out a report to the server which will be stored as the last known state in the server. </p>
+<p>On polling for node list the client will also track device and their state values. This is applicable to Binary Switches in this version. Once a binary switch is found in the network the client will retrieve the switch's last known state from the server. Every time the binary switch's state changes it will send out a report to the server which will be stored as the last known state in the server. </p>
 <h1><a class="anchor" id="toggle_switch"></a>
 Toggle Binary Switch</h1>
 <p>Whenever a binary switch is detected in the network the "Toggle Switch" button will be visible in the client. Note that this is possible when a)polling the network and detecting a binary switch or b)Including a binary switch using the client.<br />
- Once the button is visible the user can manually change the state of the binary switch by clicking on the button. For example if the switch is turned off and the user presses the button it will be turned on. This is achieved using the <b>zwif_switch</b> web api and the necessary input parameter for doing a BINARY_SWITCH_SET to the server. </p>
+ Once the button is visible the user can manually change the state of the binary switch by clicking on the button. For example if the switch is turned off and the user presses the button it will be turned on. </p>
 <h1><a class="anchor" id="Stop"></a>
 Binary Switch tracking</h1>
 <p>Whenever a binary switch is removed from the network the client will inform this to the user. Once the switch is removed the "Toggle Switch" button will be no longer be visible in the client. The removal can happen either using the client's "Exclude Device" button or by removing the switch from the network manually by the user. In either case the information will be relayed to the user by the client. </p>
